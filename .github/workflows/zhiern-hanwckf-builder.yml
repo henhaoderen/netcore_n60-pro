@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: hanwckf-builder
+name: zhiern-hanwckf
 
 on:
   repository_dispatch:
@@ -22,11 +22,11 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: hanwckf.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part3.sh
+  DIY_P2_SH: diy-part5.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  FIRMWARE_TAG: dailook-hanwckf
+  FIRMWARE_TAG: zhiern-hanwckf
   TZ: Asia/Shanghai
 
 jobs:
