@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part3.sh
-# Description: OpenWrt DIY script part 3 (After Update feeds)
+# File name: diy-part6.sh
+# Description: OpenWrt DIY script part 6 (After Update feeds)
 #
 # Copyright (c) 2019-2024 P3TERX <https://p3terx.com>
 #
@@ -22,7 +22,6 @@
 # Remove print samba4
 sed -i '/printer/d' target/linux/mediatek/image/mt7986.mk
 sed -i 's/kmod-usb-net-rndis //g' target/linux/mediatek/image/mt7986.mk
-sed -i 's/ luci-app-samba4//g' target/linux/mediatek/image/mt7986.mk
 sed -i '/luci-app-filetransfer/d' include/target.mk
 
 # 添加组播防火墙规则
